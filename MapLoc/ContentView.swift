@@ -37,7 +37,7 @@ struct ContentView: View {
         
         
         // use userRegion.region instead of $region because it's a prop
-        Map(coordinateRegion: $userRegion.region, interactionModes: MapInteractionModes.all, showsUserLocation: true, userTrackingMode: $tracking)
+        //Map(coordinateRegion: $userRegion.region, interactionModes: MapInteractionModes.all, showsUserLocation: true, userTrackingMode: $tracking)
         // interactionModes: MapInteractionModes.pan , zoom
         // showsUserLocation true still won't show until we have a user location allowed/avail
         /// must add 'Privacy - when in use' and a description in info.plist to make it work right
@@ -45,6 +45,25 @@ struct ContentView: View {
         
         // LocationManager - legacy
         // New File > Cocoa Touch class > subclass of NSObject >> LocationManager
+        
+        // ANNOTATION (ADDING A PIN TO THE MAP)
+        //Map(coordinateRegion: $userRegion.region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking, annotationItems: MapLocations, annotationContent: {location in
+       //     MapPin(coordinate: location.coordinate, tint: .red)
+        //})
+        
+        // Need to get the Identifiable MapLocations (annotations) as an array
+        // MapMarker is premade || MapAnnotation is where you design your own
+        // MapPin is now deprecated....so... use MapAnnotation
+        Map(coordinateRegion: $userRegion.region, interactionModes: .all, showsUserLocation: true, userTrackingMode: $tracking, annotationItems: MapLocations, annotationContent: {location in
+            MapAnnotation(coordinate: location.coordinate, content:
+                {
+                Image(systemName: "pin.circle.fill")
+                    .foregroundColor(.red)
+                Text(location.name)
+                }
+            )}
+        )
+        
     }
 }
 

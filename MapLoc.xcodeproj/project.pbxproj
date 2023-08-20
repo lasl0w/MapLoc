@@ -12,6 +12,7 @@
 		F10D383C2A834AC600140DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10D383B2A834AC600140DF3 /* Assets.xcassets */; };
 		F10D383F2A834AC600140DF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10D383E2A834AC600140DF3 /* Preview Assets.xcassets */; };
 		F10D38472A8C8A2300140DF3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D38462A8C8A2300140DF3 /* LocationManager.swift */; };
+		F10D38492A8D7E2F00140DF3 /* MapLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D38482A8D7E2F00140DF3 /* MapLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F10D383E2A834AC600140DF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F10D38452A8C88BD00140DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F10D38462A8C8A2300140DF3 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F10D38482A8D7E2F00140DF3 /* MapLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		F10D38362A834AC500140DF3 /* MapLoc */ = {
 			isa = PBXGroup;
 			children = (
+				F10D38482A8D7E2F00140DF3 /* MapLocation.swift */,
 				F10D38452A8C88BD00140DF3 /* Info.plist */,
 				F10D38372A834AC500140DF3 /* MapLocApp.swift */,
 				F10D38392A834AC500140DF3 /* ContentView.swift */,
@@ -145,6 +148,7 @@
 				F10D383A2A834AC500140DF3 /* ContentView.swift in Sources */,
 				F10D38382A834AC500140DF3 /* MapLocApp.swift in Sources */,
 				F10D38472A8C8A2300140DF3 /* LocationManager.swift in Sources */,
+				F10D38492A8D7E2F00140DF3 /* MapLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
